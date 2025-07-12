@@ -1,0 +1,179 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="./static/css/homepage.css" rel="stylesheet" type="text/css" />
+    <link href="./static/main.css" rel="stylesheet" type="text/css" />
+    <link href="./static/css/analysis.css" rel="stylesheet" type="text/css" />
+    <script src="./static/js/dashboard.js"></script> 
+    <script src="./static/js/analysis.js"></script> 
+    <title>packguard.dev</title>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://packguard.dev">
+            <img src="./static/images/logo3.png" alt="PackGuard Logo" width="120" height="100" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<header class="hero-section text-white text-center py-5">
+    <div class="container">
+        <h1 style="color: black;">PackGuard.dev</h1>
+        <p class="lead" style="color: black;">Your trusted platform for package analysis and malware detection.</p>
+    </div>
+</header>
+
+<style>
+    .card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card ul {
+    padding-left: 1.5rem;
+    color: #555;
+}
+</style>
+
+<section id="products" class="container my-5">
+    <h2 class="text-center mb-4">Our Products</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <a href="https://packguard.dev/dynamic_analysis/" class="text-decoration-none">
+                        <h4 class="card-title text-primary">Dynamic Analysis</h4>
+                    </a>
+                    <ul>
+                        <li>Runtime behavior analysis</li>
+                        <li>System call tracing</li>
+                        <li>Malware detection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title text-primary">Open-source Package Malware Detection</h4>
+                    <ul>
+                        <li>Signature-based</li>
+                        <li>Yara rules</li>
+                        <li>Machine Learning/Deep Learning</li>
+                        <li>LLMs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title text-primary">Static Analysis</h4>
+                    <ul>
+                        <li><a href="https://packguard.dev/find_typosquatting/">Package Typosquatting Detection</a></li>
+                        <li><a href="https://packguard.dev/bandit4mal/" class="text-decoration-none">Bandit4Mal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <a href="https://packguard.dev/find_source_code/" class="text-decoration-none">
+                        <h4 class="card-title text-primary">Source Code Finder</h4>
+                    </a>
+                    <ul>
+                        <li>PyPI Source Code Finder</li>
+                        <li>npm Source Code Finder</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <a href="https://packguard.dev/lastpymile/" class="text-decoration-none">
+                        <h4 class="card-title text-primary">Identifying Source Package Discrepancies</h4>
+                    </a>
+                    <ul>
+                        <li>PyPI Source Code Finder</li>
+                        <li>npm Source Code Finder</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- <footer id="contact" class="bg-light text-dark text-center py-2 mt-auto" style="position: relative; bottom: 0; width: 100%; box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);">
+    <div class="container">
+        <p class="mb-1">&copy; 2025 PackGuard.dev. All rights reserved.</p>
+        <p class="mb-0">Contact us at <a href="mailto:support@packguard.dev" class="text-dark text-decoration-underline">support@packguard.dev</a></p>
+    </div>
+</footer> -->
+
+<script>
+    // Ensure footer sticks to the bottom of the page
+    document.addEventListener("DOMContentLoaded", function () {
+        const body = document.body;
+        const html = document.documentElement;
+        const footer = document.getElementById("contact");
+
+        const setFooterPosition = () => {
+            const contentHeight = body.scrollHeight; // Total content height
+            const viewportHeight = window.innerHeight; // Viewport height
+            if (contentHeight < viewportHeight) {
+                footer.style.position = "fixed";
+            } else {
+                footer.style.position = "relative";
+            }
+        };
+
+        setFooterPosition();
+        window.addEventListener("resize", setFooterPosition);
+    });
+</script>
+</body>
+</html>
+
